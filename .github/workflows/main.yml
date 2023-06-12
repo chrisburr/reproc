@@ -75,7 +75,7 @@ jobs:
         if: runner.os == 'Windows'
         run: |
           iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
-          scoop install ninja llvm --global
+          scoop install ninja llvm@14 --global
 
           if ("${{ matrix.compiler }}" -eq "gcc") {
             echo CC=gcc | Add-Content -Path $env:GITHUB_ENV -Encoding utf8
