@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - close-fds-optimise-mine
   pull_request:
     branches:
-      - main
+      - close-fds-optimise-mine
 
 jobs:
   ci:
